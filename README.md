@@ -2,16 +2,14 @@
 ## _By: Celeste Field, Mark Gridley, Dan Merys_
 ## Description
 
-_This application will take inputted numbers and output the numbers into full words._
+_This application will take a script and let the user enter an amount of cents that shows the smallest number of quarters, dimes, nickels, and pennies needed to make that change._
 
 ## Setup
 
 
-* _Clone repository from Github: https://github.com/assassin56/coin_combo_ruby.git_
+* _Clone repository from Github: https://github.com/fieldceleste/coin_combo.git_
 * _Open the repository folder in the terminal_
-* _Enter $ npm install - this will allow you to install all of the packages in this project._
 * _Make sure you intitialize GIT, and delete the exsiting .git file by running in the terminal $rm -rf .git. 
-* _Be sure to check your .gitignore folder to include the correct files to ignore for this project. 
 * _Now that you have everything ready, you can run git init. 
 * _Open in editor (i.e. Visual Studio Code) and create your own repo._
 * _Enter $ npm run start to run your local server and display your page._
@@ -22,35 +20,23 @@ _No known bugs at this time_
 
 ## Technology
 
-* _JavaScript_
-* _HTML_
-* _CSS_
-* _Bootstrap_
-* _jQuery_
 * _Git_
 * _GitHub_
-* _npm_
-* _Node_
-* _Jest_
-* _Webpack_
-* _Babel_
-* _API_
-* _ENV_
 * _Ruby_
 * _Rspec_
-
+* _Pry_
 
 ## Specs
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
-| If users enters "0" | Input: 0 | Output: "zero"|
-| It will turn a single number and spell it out into a word | Input: 3 | Output: three |
-| If user enters a number 10-12 | Input: 12| Output: tweleve | 
-| If user enters a number 13-19 | Input: 15 | Output: fifteen | 
-| If user enters a number in the 10's| Input: 40 | Output: forty | 
-| If the user enters a number with the power of ten | Input: 2,000 | Output: two thousand |
-| Will construct string for each number in place| Input: 299 | Output: two hundred ninety nine |
+| User enters a number | 25 | |
+| App will divide number by 1| 25 | 25 |
+| App will divide number by 5 | 25 | 5 | 
+| App will divide number by 10 | 25 | 2 | 
+| App will divide number by 25 | 25 | 1 | 
+| App will divide number by 50 | 25 | 0 |
+|  |  |  |
 
 
 

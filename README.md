@@ -30,7 +30,7 @@ _No known bugs at this time_
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
-| User enters a number | 25 | |
+| User enters a number | 10 | |
 | App will divide number by 1| 25 | 25 |
 | App will divide number by 5 | 25 | 5 | 
 | App will divide number by 10 | 25 | 2 | 

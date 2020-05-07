@@ -9,31 +9,31 @@ describe ('Combo') do
   end
   it("will display inputted number in amount of quarters that will fit into it") do
     combo = Combo.new(26)
-    expect(combo.quarters).to(eq(1))
+    expect(combo.quarters_amount).to(eq(1))
   end
   it("will display inputted number in amount of dimes") do
     combo = Combo.new(20)
-    expect(combo.dimes).to(eq(2))
+    expect(combo.dimes_amount).to(eq(2))
   end
   it("will display inputted number in amount of nickels") do
     combo = Combo.new(15)
-    expect(combo.nickels).to(eq(3))
+    expect(combo.nickels_amount).to(eq(3))
   end
   it ("will display inputted number in amount of pennies") do 
     combo = Combo.new(8)
-    expect(combo.pennies).to(eq(8))
+    expect(combo.pennies_amount).to(eq(8))
   end
   it("will display inputted number in amount of all coins") do
     combo = Combo.new(66)
-    expect(combo.quarters).to(eq(2))
-    expect(combo.dimes).to(eq(1))
-    expect(combo.nickels).to(eq(1))
-    expect(combo.pennies).to(eq(1))
+    expect(combo.quarters_amount).to(eq(2))
+    expect(combo.dimes_amount).to(eq(1))
+    expect(combo.nickels_amount).to(eq(1))
+    expect(combo.pennies_amount).to(eq(1))
   end
   it("will display inputted number in amount of all coins") do
     combo = Combo.new(138)
-    expect(combo.quarters).to(eq(5))
-    expect(combo.dimes).to(eq(1))
-    expect(combo.pennies).to(eq(3))
+    expect(combo.quarters_amount).to(eq(5))
+    expect(combo.dimes_amount).to(eq(1))
+    expect(combo.pennies_amount).to(eq(3))
   end
 end

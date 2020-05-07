@@ -1,6 +1,6 @@
 require('pry')
 class Combo
-  attr_accessor(:amount, :change, :quarters, :dime , :nickels , :pennies)
+  attr_accessor(:amount, :quarters, :dimes , :nickels , :pennies)
   attr_reader(:coin_array)
 
   def initialize(amount)
@@ -11,7 +11,7 @@ class Combo
     @pennies = 0
   end
 
-  def quarters
+  def quarters_amount
     until (@amount < 25) do
       @quarters += 1
       @amount -= 25
@@ -19,7 +19,7 @@ class Combo
     @quarters
   end
 
-  def dimes
+  def dimes_amount
     until (@amount < 10) do
       @dimes += 1
       @amount -= 10
@@ -27,7 +27,7 @@ class Combo
     @dimes
   end
 
-  def nickels
+  def nickels_amount
     until (@amount < 5) do
       @nickels += 1
       @amount -= 5
@@ -35,15 +35,14 @@ class Combo
     @nickels
   end
 
-  def pennies
+  def pennies_amount
     @amount
   end
 
   def coin_counter
-    self.quarters
-    self.dimes
-    self.nickles
-    self.pennies
+    self.quarters_amount
+    self.dimes_amount
+    self.nickels_amount
+    self.pennies_amount
   end
-
 end

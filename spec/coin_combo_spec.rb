@@ -7,8 +7,16 @@ describe ('Combo') do
     combo = Combo.new(10)
     expect(combo.amount).to(eq(10))
   end
-  it("will divide inputted number by 1 to show amount in pennies") do
-    combo = Combo.new(4)
-    expect(combo.counter).to(eq([1, 1, 1, 1]))
+  it("will display inputted number in amount of quarters that will fit into it") do
+    combo = Combo.new(26)
+    expect(combo.quarters).to(eq(1))
   end
+  # it("will display inputted number in amount of nickels") do
+  #   combo = Combo.new(15)
+  #   expect(combo.counter).to(eq([5, 5, 5]))
+  # end
+  # it("will display inputted number in amount of nickels AND pennies") do
+  #   combo = Combo.new(6)
+  #   expect(combo.counter).to(eq([5, 1]))
+  # end
 end

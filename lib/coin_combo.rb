@@ -9,7 +9,6 @@ class Combo
     @dimes = 0
     @nickels = 0
     @pennies = 0
-    @change = 0
   end
 
   def quarters
@@ -20,22 +19,31 @@ class Combo
     @quarters
   end
 
+  def dimes
+    until (@amount < 10) do
+      @dimes += 1
+      @amount -= 10
+    end
+    @dimes
+  end
+
+  def nickels
+    until (@amount < 5) do
+      @nickels += 1
+      @amount -= 5
+    end
+    @nickels
+  end
+
+  def pennies
+    @amount
+  end
+
+  def coin_counter
+    self.quarters
+    self.dimes
+    self.nickles
+    self.pennies
+  end
+
 end
-
-
-
-
-
-
-
-
-
-
-
-
-  # def counter
-  #   change = []
-  #   coin_array.each do |coin|
-  #     if ((@amount/coin).to_int > 0)
-  #       (@amount/coin).to_int.times {change.push(coin)}
-  #       #  remaining_amount = @amount - coin.inject(:+)
